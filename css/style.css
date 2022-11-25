@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.training-section {
+  width: 100%;
+  background-color: #eee;
+}
+
+.training-section h1 {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.card-container {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.training-items {
+  flex-basis: 23%;
+  margin: 10px 0px;
+  padding: 20px 0px;
+  box-shadow: 0px 0px 10px 3px lightgrey;
+  background: white;
+  text-align: center;
+}
+
+.training-items:hover {
+  background: blue;
+}
+
+.training-items:hover h3,
+.training-items:hover p {
+  color: white;
+}
+.icon {
+  height: 100px;
+  width: 100px;
+}
+
+.title {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+button {
+  font-size: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: lighter;
+  border-radius: 3px;
+  width: 100px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  border: none;
+}
+
+.training-items:hover button {
+  background: white;
+  color: blue;
+}
+
+.description {
+  font-size: 12px;
+  color: #707070;
+  line-height: 16px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .card-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .training-items {
+    margin: 10px;
+  }
+}
